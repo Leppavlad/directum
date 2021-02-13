@@ -1,0 +1,20 @@
+{
+  "form": {
+    "name": "Консультация",
+    "postmessage": "Спасибо за ответ!",
+    "class": "form",
+
+    "items": [{
+      "type": "text",
+      "attributes": {
+        "name": "name",
+        "placeholder": "Введите Ваше имя",
+        "required": true,
+        "value": "",
+        "label": "Имя",
+        "class": "form__input",
+        "disabled": false
+      }
+    }]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "form": {
+    "name": "Консультация",
+    "postmessage": "Спасибо за ответ!",
+    "class": "form",
+
+    "items": [      
+    {
+      "type": "text",
+      "attributes": {
+        "name": "name",
+        "placeholder": "Введите Ваше имя",
+        "required": true,
+        "value": "",
+        "label": "Имя",
+        "class": "form__input",
+        "validationRules": [{
+          "minlength": 3
+          }],
+        "disabled": false
+      }
+    }, 
+    {
+      "type": "tel",
+      "attributes": {
+        "name": "phone",
+        "placeholder": "Ваш номер телефона",
+        "required": true,
+        "value": "",
+        "label": "Телефон",
+        "class": "form__input",
+        "validationRules": [{
+          "minlength": 6,
+          "maxlength": 11,
+          "digits": true
+          }],
+        "disabled": false
+      }
+    }, 
+    {
+      "type": "email",
+      "attributes": {
+        "name": "email",
+        "placeholder": "Электронная почта",
+        "required": true,
+        "value": "",
+        "label": "E-mail",
+        "class": "form__input",
+        "validationRules": [{
+          "email": true
+          }],
+        "disabled": false
+      }
+    }, 
+    {
+      "type": "textarea",
+      "attributes": {
+        "name": "message",
+        "placeholder": "Ваше сообщение",
+        "required": true,
+        "value": "",
+        "label": "Сообщение",
+        "class": "form__input_textarea",
+        "validationRules": [],
+        "disabled": false
+      }
+    },
+    {
+      "type": "checkbox",
+      "attributes": {
+        "name": "message",
+        "placeholder": "",
+        "required": false,
+        "value": "",
+        "label": "С условиями обслуживания ознакомлен",
+        "class": "form__checkbox",
+        "validationRules": [],
+        "disabled": false
+      }
+    },
+    {
+      "type": "submit",
+      "attributes": {
+        "name": "",
+        "placeholder": "",
+        "required": false,
+        "value": "Отправить",
+        "label": "",
+        "class": "button_form",
+        "validationRules": [],
+        "disabled": false
+      }
+    }
+    ]
+  }
+}
