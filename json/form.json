@@ -68,12 +68,39 @@
     {
       "type": "checkbox",
       "attributes": {
-        "name": "message",
+        "name": "agreement",
         "placeholder": "",
         "required": false,
         "value": "",
         "label": "С условиями обслуживания ознакомлен",
         "class": "form__checkbox",
+        "validationRules": [],
+        "disabled": false,
+        "checked": false
+      }
+    },
+    {
+      "type": "select",
+      "attributes": {
+        "name": "select",
+        "placeholder": "",
+        "required": false,
+        "options": [{
+          "value": "first",
+          "text": "Бюджет",
+          "selected": false
+        }, {
+          "value": "second",
+          "text": "Оптима",
+          "selected": true
+        }, {
+          "value": "third",
+          "text": "Экстра",
+          "selected": false
+        }],
+        "value": "",
+        "label": "Опция",
+        "class": "select",
         "validationRules": [],
         "disabled": false
       }
@@ -81,7 +108,7 @@
     {
       "type": "submit",
       "attributes": {
-        "name": "",
+        "name": "submit",
         "placeholder": "",
         "required": false,
         "value": "Отправить",

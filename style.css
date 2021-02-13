@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+label {
+  display: block;
+}
+
 form input[type=text],
 form input[type=tel],
 form input[type=email],
@@ -17,8 +21,13 @@ form textarea {
   margin: 5px 0;
   padding: 10px;
 }
-
-form input[type=checkbox] {margin-top: 20px;}
+form select {
+  margin: 10px;
+  padding: 5px 10px;
+}
+form input[type=checkbox] {
+  margin: 10px;
+}
 
 form textarea {
   height: 60px;
