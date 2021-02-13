@@ -48,10 +48,28 @@ function formOfJson(file) {
           optionElement.setAttribute("selected", "") : null;
         formElements[i][1].appendChild(optionElement);
       })
+    } else if (item.type == "radio") {
+      formElements[i][1] = document.createElement('div');
+      formElements[i][1].setAttribute("class", "radio__wrapper")
+      
+      item.attributes.values.forEach(radio => {
+        let radioLabel = document.createElement("label");
+            radioLabel.textContent = radio.label;
+        let radioElement = document.createElement("input");
+            radioElement.setAttribute("type", "radio");
+            radioElement.setAttribute("name", item.attributes.name);
+            radioElement.setAttribute("value", radio.value);
+        (radio.checked) ?
+          radioElement.setAttribute("checked", "") : null;
+        radioLabel.appendChild(radioElement); 
+        console.log(formElements[i][1]);
+        formElements[i][1].appendChild(radioLabel); 
+        });
     } else {
       formElements[i][1] = document.createElement('input');
       formElements[i][1].setAttribute("type", item.type);
     }
+
     formElements[i][1].setAttribute("class", item.attributes.class);
     formElements[i][1].setAttribute("name", item.attributes.name);
 

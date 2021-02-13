@@ -104,8 +104,27 @@
         "validationRules": [],
         "disabled": false
       }
-    },
-    {
+    }, {
+      "type": "radio",
+      "attributes": {
+        "name": "sex",
+        "placeholder": "",
+        "required": false,
+        "values": [{
+          "label": "Мужской",
+          "value": "male",
+          "checked": true
+        }, {
+          "label": "Женский",
+          "value": "female",
+          "checked": false
+        }],
+        "label": "Пол",
+        "class": "radio",
+        "validationRules": [],
+        "disabled": false
+      }
+    }, {
       "type": "submit",
       "attributes": {
         "name": "submit",
