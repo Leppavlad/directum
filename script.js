@@ -68,7 +68,6 @@ function formOfJson(file) {
         (radio.checked) ?
           radioElement.setAttribute("checked", "") : null;
         radioLabel.appendChild(radioElement); 
-        console.log(formElements[i][1]);
         formElements[i][1].appendChild(radioLabel); 
         });
     } 
